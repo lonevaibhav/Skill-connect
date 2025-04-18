@@ -10,7 +10,11 @@ body {
 }
 
 a {
-  @apply text-blue-600 hover:underline;
+  @apply text-blue-600;
+}
+
+a:hover {
+  @apply underline;
 }
 
 /* Add any custom classes or overrides below if needed */

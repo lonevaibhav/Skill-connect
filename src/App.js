@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Login from "./pages/Login";
-import RoleSelect from "./pages/RoleSelect";
-import EmployerDashboard from "./pages/EmployerDashboard";
-import WorkerDashboard from "./pages/WorkerDashboard";
+import Login from "./component/pages/Login";
+import RoleSelect from "./component/pages/RoleSelect";
+import EmployerDashboard from "./component/pages/EmployerDashboard";
+import WorkerDashboard from "./component/pages/WorkerDashboard";
 
 function App() {
   return (
