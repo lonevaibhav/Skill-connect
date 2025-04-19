@@ -8,6 +8,32 @@ import Login from "./pages/Login";
 function App() {
   return (
     <Router>
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 text-gray-800">
+        <Navbar />
+        <main className="max-w-6xl mx-auto p-6">
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/employer" element={<EmployerDashboard />} />
+            <Route path="/worker" element={<WorkerDashboard />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+/*import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import EmployerDashboard from "./pages/EmployerDashboard";
+import WorkerDashboard from "./pages/WorkerDashboard";
+import Login from "./pages/Login";
+
+function App() {
+  return (
+    <Router>
       <div className="min-h-screen bg-gray-100">
         <Navbar />
         <Routes>
